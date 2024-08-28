@@ -13,7 +13,7 @@ export function Header2() {
   return (
     <Navbar
       fluid
-      className="bg-[#06091b]"
+      className="bg-black max-w-[1920px] py-8 "
       theme={{
         brand: {
           base: "",
@@ -38,8 +38,8 @@ export function Header2() {
       <div className="flex items-center space-x-8">
         <NavbarBrand href="#">
           <Image
-            width={81.5}
-            height={26.5}
+            width={163}
+            height={52}
             src="/lg.svg"
             alt="Flowbite React Logo"
           />
@@ -47,31 +47,31 @@ export function Header2() {
         <div className="hidden md:flex items-center justify-between space-x-8  ">
           <Link
             href="#"
-            className="text-white border-b-2  border-[#06091b] hover:border-[#8167ff] py-1 text-xs"
+            className="text-white text-lg font-bold  capitalize leading-[34.67px]  border-b-2  border-[#06091b] hover:border-[#8167ff] py-1 "
           >
             Home
           </Link>
           <Link
             href="#"
-            className="text-white border-b-2 border-[#8167ff] py-1 text-xs"
+            className="text-white text-lg font-bold  capitalize leading-[34.67px] border-b-2 border-[#8167ff] py-1"
           >
             About
           </Link>
           <Link
             href="#"
-            className="text-white border-b-2 border-[#06091b] hover:border-[#8167ff] py-1 text-xs"
+            className="text-white text-lg font-bold  capitalize leading-[34.67px]  border-b-2  border-[#06091b] hover:border-[#8167ff] py-1 "
           >
             Services
           </Link>
           <Link
             href="#"
-            className="text-white border-b-2 border-[#06091b] hover:border-[#8167ff] py-1 text-xs"
+            className="text-white text-lg font-bold  capitalize leading-[34.67px]  border-b-2  border-[#06091b] hover:border-[#8167ff] py-1 "
           >
             Blog
           </Link>
           <Link
             href="#"
-            className="text-white border-b-2 border-[#06091b] hover:border-[#8167ff] py-1 text-xs"
+            className="text-white text-lg font-bold  capitalize leading-[34.67px]  border-b-2  border-[#06091b] hover:border-[#8167ff] py-1 "
           >
             Customer Stories
           </Link>
@@ -84,23 +84,35 @@ export function Header2() {
         </div> */}
       </div>
 
-      <div className="flex space-x-4 md:order-2">
-        <Button
-          color="light"
-          size="sm"
-          className="hidden md:block"
-          theme={{
-            color: {
-              light: "border border-white bg-transparent text-white   ",
-            },
-            size: {
-              sm: "px-3 py-1.5 text-xs",
-            },
-          }}
+      <div className="flex space-x-4 md:order-2 ">
+        <div className="hidden md:inline-flex h-14 px-10 py-3 rounded-lg border-2 border-white justify-center items-center gap-2.5 ">
+          <button className=" text-white text-lg font-extrabold font-['Mona Sans'] leading-9">
+            Contact Us
+          </button>
+        </div>
+        <div className="md:hidden  h-14 px-10 py-3 rounded-lg border-2 border-white justify-center items-center gap-2.5 ">
+          <button className=" text-white text-lg font-extrabold font-['Mona Sans'] leading-9">
+            Contact Us
+          </button>
+        </div>
+
+        {/* <Button
+          // color="light"
+          // size="sm"
+          className="bg-transparent hidden md:inline-flex h-[54px] px-10 py-3 rounded-[10px] border-2 border-white justify-center items-center gap-2.5 text-white focus:outline-none enabled:hover:bg-white enabled:hover:text-black"
+          // theme={{
+          //   base: "h-[54px] px-10 py-3 rounded-[10px] border-2 border-white justify-center items-center gap-2.5 inline-flex",
+          //   color: {
+          //     light: "border-2 border-white bg-transparent text-white   ",
+          //   },
+          //   size: {
+          //     sm: "px-3 py-1.5 text-xs ",
+          //   },
+          // }}
         >
           Contact Us
-        </Button>
-        <Button
+        </Button> */}
+        {/* <Button
           color="light"
           size="sm"
           theme={{
@@ -114,7 +126,7 @@ export function Header2() {
           className="md:hidden "
         >
           Contact Us
-        </Button>
+        </Button> */}
         <NavbarToggle />
       </div>
       <NavbarCollapse>
