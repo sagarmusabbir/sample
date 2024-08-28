@@ -1,12 +1,10 @@
-import Image from "next/image";
-import { Header2 } from "./header2";
-import { DefaultHero } from "@/components/flowbitehero";
+import { Hero } from "@/components/hero";
 
 export default function Home() {
   return (
     <main>
-      {/* <Hero /> */}
-      <DefaultHero />
+      <Hero />
+      {/* <DefaultHero /> */}
     </main>
   );
 }
